@@ -58,5 +58,12 @@ public class Venta {
                 +"%nPresio Final: %.2f",this.getCantidad(), this.getPrecio(),this.getDecuento(),this.getPrecioFinal());
         return msj;
 }
-
+//Calculos para el descuento y el precioFinal
+    public void calcularDescuento() {
+        if(this.precio >= 1000 & this.cantidad >= 10){
+            this.decuento = (this.precio * 0.1); 
+        }else{
+            this.decuento = (this.precio * 0.05);
+}
+}
 }
